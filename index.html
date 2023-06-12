@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Countdown Timer</h1>
+
+    <div class="form-group">
+      <label for="hours">Hours:</label>
+      <input type="number" id="hours" class="form-control" min="0">
+    </div>
+    <div class="form-group">
+      <label for="minutes">Minutes:</label>
+      <input type="number" id="minutes" class="form-control" min="0">
+    </div>
+    <div class="form-group">
+      <label for="seconds">Seconds:</label>
+      <input type="number" id="seconds" class="form-control" min="0">
+    </div>
+    <div class="text-center">
+      <button id="startButton" class="btn btn-primary" onclick="startTimer()">Start</button>
+      <button id="stopButton" class="btn btn-danger" onclick="stopTimer()">Stop</button>
+      <button id="resetButton" class="btn btn-secondary" onclick="resetTimer()">Reset</button>
+      <button id="lapButton" class="btn btn-info" onclick="lapTimer()">Lap</button>
+      <button id="popoutButton" class="btn btn-primary" onclick="openPopoutWindow()">Popout</button>  <!--löschen da sonst popout alert nicht geht-->
+      <button id="okButton" class="btn btn-primary" onclick="stopAudio()">OK</button>
+    </div>
+
+    <div id="timer" class="text-center">00:00:00</div>
+
+    <h3 class="text-center">Lap Times</h3>
+    <ul id="laps" class="list-group"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
