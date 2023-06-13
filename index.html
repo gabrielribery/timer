@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Countdown Timer</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <style>
     body {
       background-color: black;
     }
-  
-    h1, #hours, #minutes, #seconds, #timer, h3, #laps {
-      color: #00FF00; /* giftgrün */
+
+    h1,
+    #hours,
+    #minutes,
+    #seconds,
+    #timer,
+    h3,
+    #laps,
+    p {
+      color: #00FF00;
+      /* giftgrün */
     }
   </style>
   <div class="container">
+    <p class="text-center">!!Erlaube dem Timer Popup's zu öffnen!!</p>
+  <div class="container">
     <h1 class="text-center">Countdown Timer</h1>
-
     <div class="form-group">
-      <label for="hours">Hours:</label>
+      <label for="hours" id="hours">hours:</label>
       <input type="number" id="hours" class="form-control" min="0">
+      <!--hier könnte man auch mit placeholder="minutes" arbeiten-->
     </div>
     <div class="form-group">
-      <label for="minutes">Minutes:</label>
+      <label for="minutes" id="minutes">minutes:</label>
       <input type="number" id="minutes" class="form-control" min="0">
     </div>
     <div class="form-group">
-      <label for="seconds">Seconds:</label>
+      <label for="seconds" id="hours">seconds:</label>
       <input type="number" id="seconds" class="form-control" min="0">
     </div>
     <div class="text-center">
@@ -35,7 +47,8 @@
       <button id="stopButton" class="btn btn-danger" onclick="stopTimer()">Stop</button>
       <button id="resetButton" class="btn btn-secondary" onclick="resetTimer()">Reset</button>
       <button id="lapButton" class="btn btn-info" onclick="lapTimer()">Lap</button>
-      <button id="popoutButton" class="btn btn-primary" onclick="openPopoutWindow()">Popout</button>  <!--löschen da sonst popout alert nicht geht-->
+      <button id="popoutButton" class="btn btn-primary" onclick="openPopoutWindow()">Popout</button>
+      <!--löschen/hide da popout alert nicht geht wenn man das popup selber öffnet-->
       <button id="okButton" class="btn btn-primary" onclick="stopAudio()">OK</button>
     </div>
 
@@ -47,4 +60,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
