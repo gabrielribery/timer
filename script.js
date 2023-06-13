@@ -90,7 +90,8 @@ function openPopoutWindow() {
           display: flex;
           align-items: center;
           justify-content: center;
-          }
+          color: #FF0000;
+          font-weight: bold;
         }
       </style>
     </head>
