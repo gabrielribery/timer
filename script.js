@@ -97,7 +97,7 @@ function openPopoutWindow() {
     </head>
     <body>
       <div id="main">
-      <div id="popoutTimer">${timerValue}</div>
+      <div id="popoutTimer">Timer abgelaufen</div>
       <button onclick="stopAudioInPopout();">OK</button>
       <script>
         function stopAudioInPopout() {
