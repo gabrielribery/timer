@@ -85,13 +85,13 @@ function openPopoutWindow() {
           padding: 10px;
           font-size: 18px;
           text-align: center;
+          color: #FF0000;
+          font-weight: bold;
           background-image: url('rick.gif');
           background-repeat: repeat;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #FF0000;
-          font-weight: bold;
         }
       </style>
     </head>
