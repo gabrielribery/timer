@@ -17,3 +17,12 @@
     margin-right: 10px;
   }
   
+  @font-face {
+    font-family: "Digit";
+    src: url("ds_digital/DS-DIGI.TTF") format("truetype");
+  }
+  
+  body {
+    font-family: "Digit", sans-serif; 
+  }
+  

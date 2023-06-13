@@ -66,8 +66,8 @@ function lapTimer() {
 }
 
 function openPopoutWindow() {
-  const width = 200;
-  const height = 100;
+  const width = 300;
+  const height = 250;
   const left = window.screenX || window.screenLeft || 0;
   const top = window.screenY || window.screenTop || 0;
 
@@ -78,17 +78,24 @@ function openPopoutWindow() {
   const popoutContent = `
     <html>
     <head>
-      <title>Countdown Popout</title>
+      <title>Countdown</title>
       <style>
         body {
           margin: 0;
           padding: 10px;
           font-size: 18px;
           text-align: center;
+          background-image: url('rick.gif');
+          background-repeat: repeat;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          }
         }
       </style>
     </head>
     <body>
+      <div id="main">
       <div id="popoutTimer">${timerValue}</div>
       <button onclick="stopAudioInPopout();">OK</button>
       <script>
@@ -123,4 +130,3 @@ function playSound() {
   audio = new Audio('rickroll.mp3');
   audio.play();
 }
-
