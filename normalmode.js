@@ -4,7 +4,7 @@ function toggleMode() {
   var script = document.getElementById('modeScript');
   var image = document.getElementById('modeImage');
   if (style.getAttribute('href') === 'normalmode.css') {
-    style.setAttribute('href', 'hardcoremode.css');  h
+    style.setAttribute('href', 'hardcoremode.css');  
     script.setAttribute('src', 'hardcoremode.js');
     image.setAttribute('src', 'hardcoremode.png');
     restartAnimation();

@@ -150,7 +150,7 @@ function playSound() {
     }
   }
 
-  audio = new Audio(); // Änderung: Verwenden Sie die globale Variable audio
+  audio = new Audio();
 
   if (isHardcore) {
     audio.setAttribute('src', 'hardcoremode.mp3');
