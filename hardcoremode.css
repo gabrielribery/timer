@@ -42,7 +42,7 @@ body .content {
   justify-content: center;
 }
 .mask > img {
-  filter: opacity(1) brightness(0.5);
+  filter: opacity(1) brightness(1.9);
   width: 100%;
   max-width: 680px;
   margin: auto;
