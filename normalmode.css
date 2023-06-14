@@ -73,12 +73,14 @@ button {
     display: flex;
     justify-content: center;
 }
+/* deaktiviert da media query versuch 
 .col-md-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 10px;
 }
+*/
 @font-face {
     font-family: "DS-DIGI";
     src: url("DS-DIGI.TTF") format("truetype");
@@ -90,12 +92,13 @@ button {
     font-weight: bold;
 }
 /* buttons */
+
 .btn {
     padding: 10px 20px;
     color: #10d210;
     background-color: transparent;
     border-color: #10d210;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "DS-DIGI";
     src: url("DS-DIGI.TTF") format("truetype");
     font-size: 30px;
@@ -115,6 +118,7 @@ input[type="text"] {
     src: url("DS-DIGI.TTF") format("truetype");
     margin-bottom: 10px;
 }
+
 /*matrix regen farbe */
 :root {
     --green-color: #00ff00;
