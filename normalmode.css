@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
 html,
 body {
     font-size: 24px;
@@ -52,50 +51,69 @@ body .content {
     max-width: 500px;
     margin: 50px auto;
 }
-
 #timer {
     font-size: 80px;
     font-weight: bold;
 }
-
 #laps {
     list-style-type: decimal;
     padding-left: 20px;
 }
-
 button {
     margin-right: 10px;
 }
-
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
 @font-face {
     font-family: "DS-DIGI";
     src: url("DS-DIGI.TTF") format("truetype");
 }
-
 .text-center {
     margin-top: 25px;
 }
-
- /* buttons */
- .btn {
+/* buttons */
+.btn {
     padding: 10px 20px;
     font-size: 16px;
     color: #10d210;
     background-color: transparent;
     border-color: #10d210;
     margin-bottom: 20px;
-  }
-
-   /* eingabefelder */
-   input[type="number"],
-   input[type="text"] {
-     background-color: transparent;
-     width: 200px;
-     height: 30px;
-     color: #10d210;
-     border-color: #10d210;
-   }
-
+    font-family: "DS-DIGI";
+    src: url("DS-DIGI.TTF") format("truetype");
+    font-size: 20px;
+}
+/* eingabefelder */
+input[type="number"],
+input[type="text"] {
+    background-color: transparent;
+    width: 60px;
+    height: 30px;
+    color: #10d210;
+    border-color: #10d210;
+    font-size: 30px;
+    font-family: "DS-DIGI";
+    src: url("DS-DIGI.TTF") format("truetype");
+    margin-bottom: 10px;
+}
+/*matrix regen farbe */
+:root {
+    --green-color: #00ff00;
+}
 /* buttons erster versuch
 .btn {
     padding: 10px 20px;

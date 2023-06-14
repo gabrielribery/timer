@@ -1,110 +1,171 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  html,
-  body {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 100;
-    background: #000;
-    width: 100%;
-    height: 100%;
-    color: #ff0000;
-    overflow: hidden;
-    font-family: "DS-DIGI";
-  }
-  
-  body .content {
-    position: absolute !important;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  .random {
-    max-width: 500px;
-    margin: auto;
-    border: 2px solid;
-    padding: 15px;
-  }
-  
-  .random > span {
-    width: 30px;
-    display: inline-block;
-  }
-  
-  .mask {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .mask > img {
-    filter: opacity(1) brightness(0.5);
-    width: 100%;
-    max-width: 680px;
-    margin: auto;
-  }
-  
-  .container {
-    max-width: 500px;
-    margin: 50px auto;
-  }
-  
-  #timer {
-    font-size: 80px;
-    font-weight: bold;
-  }
-  
-  #laps {
-    list-style-type: decimal;
-    padding-left: 20px;
-  }
-  
-  button {
-    margin-right: 10px;
-  }
-  
-  @font-face {
-    font-family: "DS-DIGI";
-    src: url("DS-DIGI.TTF") format("truetype");
-  }
-  
-  .text-center {
-    margin-top: 25px;
-  }
-  
-   /* buttons */
-   .btn {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 100;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  color: #ff0000;
+  overflow: hidden;
+  font-family: "DS-DIGI";
+}
+body .content {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+.random {
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid;
+  padding: 15px;
+}
+.random > span {
+  width: 30px;
+  display: inline-block;
+}
+.mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mask > img {
+  filter: opacity(1) brightness(0.5);
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+}
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+#timer {
+  font-size: 80px;
+  font-weight: bold;
+}
+#laps {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+button {
+  margin-right: 10px;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+@font-face {
+  font-family: "DS-DIGI";
+  src: url("DS-DIGI.TTF") format("truetype");
+}
+.text-center {
+  margin-top: 25px;
+}
+/* buttons */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ff0000;
+  background-color: transparent;
+  border-color: #ff0000;
+  margin-bottom: 20px;
+  font-family: "DS-DIGI";
+  src: url("DS-DIGI.TTF") format("truetype");
+  font-size: 20px;
+}
+/* eingabefelder */
+input[type="number"],
+input[type="text"] {
+  background-color: transparent;
+  width: 60px;
+  height: 30px;
+  color: #ff0000;
+  border-color: #ff0000;
+  font-size: 30px;
+  font-family: "DS-DIGI";
+  src: url("DS-DIGI.TTF") format("truetype");
+  margin-bottom: 10px;
+}
+/*matrix regen farbe */
+:root {
+  --red-color: #ff0000;
+}
+/* buttons erster versuch
+.btn {
     padding: 10px 20px;
     font-size: 16px;
-    color: #ff0000;
-    background-color: transparent;
-    border-color: #ff0000;
-  }
+}
 
-  /* input field */
-  input[type="number"],
-  input[type="text"] {
+.btn {
+    color: #02fa0a;
+}
+
+.btn {
+    background-color: #000000;
+}
+
+.btn {
     background-color: transparent;
+}
+
+.btn {
+    border-color: #02fa0a;
+}
+
+.btn {
+    margin-bottom: 20px;
+  }
+*/
+/* eingabefelder erster versuch
+input[type="number"],
+input[type="text"] {
+    background-color: transparent;
+}
+input[type="number"],
+input[type="text"] {
     width: 200px;
-    height: 30px;
-    color: #ff0000;
-    border-color: #ff0000;
-  }
-  
-  input[type="number"]::placeholder,
-  input[type="text"]::placeholder {
-    color: #ff0000;
-  }
-  
- 
+}
 
+input[type="number"],
+input[type="text"] {
+    height: 30px;
+}
+
+input[type="number"],
+input[type="text"] {
+    color: #02fa0a;
+}
+
+input[type="number"],
+input[type="text"] {
+    border-color: #02fa0a;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+*/

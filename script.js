@@ -118,6 +118,10 @@ function openPopoutWindow() {
   popoutWindow.focus();
 }
 
+function formatTime(time) {
+  return time.toString().padStart(2, '0');
+}
+
 function stopAudio() {
   if (audio) {
     audio.pause();
@@ -125,11 +129,34 @@ function stopAudio() {
   }
 }
 
-function formatTime(time) {
-  return time.toString().padStart(2, '0');
-}
-
 function playSound() {
-  audio = new Audio('rickroll.mp3');
+  var cssFiles = document.getElementsByTagName('link');
+  var jsFiles = document.getElementsByTagName('script');
+  var isHardcore = false;
+
+  for (var i = 0; i < cssFiles.length; i++) {
+    if (cssFiles[i].getAttribute('href') === 'hardcoremode.css') {
+      isHardcore = true;
+      break;
+    }
+  }
+
+  if (!isHardcore) {
+    for (var j = 0; j < jsFiles.length; j++) {
+      if (jsFiles[j].getAttribute('src') === 'hardcoremode.js') {
+        isHardcore = true;
+        break;
+      }
+    }
+  }
+
+  audio = new Audio(); // Änderung: Verwenden Sie die globale Variable audio
+
+  if (isHardcore) {
+    audio.setAttribute('src', 'hardcoremode.mp3');
+  } else {
+    audio.setAttribute('src', 'rickroll.mp3');
+  }
+
   audio.play();
 }
