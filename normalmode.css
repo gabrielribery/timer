@@ -76,16 +76,17 @@ button {
     margin-top: 25px;
 }
 
- /* Buttons */
+ /* buttons */
  .btn {
     padding: 10px 20px;
     font-size: 16px;
     color: #10d210;
     background-color: transparent;
     border-color: #10d210;
+    margin-bottom: 20px;
   }
 
-   /* Eingabefelder */
+   /* eingabefelder */
    input[type="number"],
    input[type="text"] {
      background-color: transparent;
