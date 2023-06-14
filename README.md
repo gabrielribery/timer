@@ -5,3 +5,5 @@ ganz ehrlich ich kann nichts mit figma anfangen. es frisst mir zuviel zeit die i
 ich werde figma nächsten dienstag im selbsstudium genauer anschauen im moment halte ich es für zeitverschwendung. sry
 
 Da ich mit verschiedenen css files arbeite und die toggeln habe ich mein seiten aufbau geändert und bei dem aufbau aber nicht berücksichtigs das die ansicht aus dem smart phone auch noch schön ist...kacke... ich versuche es mit media queries da alles anderen varianten mir mein css und js logischerweise unbrauchbar machen und ich keine zeit habe alles zu bearbeiten
+
+hat nicht funktioniert. scheisse gelaufen. müsste alle css nach bearbeiten xD
