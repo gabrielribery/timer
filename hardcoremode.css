@@ -115,6 +115,8 @@ input[type="text"] {
   src: url("DS-DIGI.TTF") format("truetype");
   margin-bottom: 10px;
 }
+
+
 /*matrix regen farbe */
 :root {
   --red-color: #ff0000;
